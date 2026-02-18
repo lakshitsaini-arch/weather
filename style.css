@@ -192,3 +192,91 @@ h1 {
     color: #667eea;
     margin: 10px 0;
 }
+
+/* Forecast section styling */
+.forecast-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #eee;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.forecast-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.forecast-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(102, 126, 234, 0.4);
+}
+
+.forecast-day {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.forecast-icon {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+}
+
+.forecast-temp {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.forecast-desc {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: capitalize;
+    margin: 10px 0 0 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .forecast-container {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    }
+    
+    .forecast-card {
+        padding: 15px;
+    }
+    
+    .forecast-day {
+        font-size: 1rem;
+    }
+    
+    .forecast-temp {
+        font-size: 1.5rem;
+    }
+    
+    .forecast-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
