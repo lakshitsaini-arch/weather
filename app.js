@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_API_KEY';
+const API_KEY = CONFIG.API_KEY;
 
 const CURRENT_API = 'https://api.openweathermap.org/data/2.5/weather';
 const FORECAST_API = 'https://api.openweathermap.org/data/2.5/forecast';
